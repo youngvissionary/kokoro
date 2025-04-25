@@ -33,6 +33,9 @@ kokoro = "kokoro.__main__:main"
 only-include = ["kokoro"]
 only-packages = true
 
+[tool.uv.workspace]
+members = ["kokoro-js-python"]
+
 [project.urls]
 Homepage = "https://github.com/hexgrad/kokoro"
 Repository = "https://github.com/hexgrad/kokoro"

@@ -186,3 +186,11 @@ def split(text):
     splitter.push(text)
     splitter.close()
     return list(splitter)
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) < 2:
+        print("Usage: python splitter.py <text>")
+        sys.exit(1)
+    text = sys.argv[1]
+    print(split(text))
